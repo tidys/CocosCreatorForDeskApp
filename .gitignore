@@ -1,0 +1,13 @@
+dist
+.idea
+package-lock.json
+splash.png
+style-desktop.css
+style-mobile.css
+game/res
+game/src
+game/subpackages
+node_modules
+.DS_Store
+cocos2d-js-min.js
+main.js

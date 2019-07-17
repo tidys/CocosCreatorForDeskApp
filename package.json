@@ -1,0 +1,51 @@
+{
+  "name": "cocoscreatorfordeskapp",
+  "version": "1.0.0",
+  "description": "使用cocos creator开发游戏，打包桌面应用解决方案",
+  "main": "src/main.js",
+  "scripts": {
+    "app": "electron .",
+    "pack-win": "electron-builder --win --x64",
+    "pack-mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.my.game",
+    "productName": "Game",
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "asar": true,
+      "asarUnpack": "static",
+      "icon": "icon/icon.png",
+      "target": [
+        "zip"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tidys/CocosCreatorForDeskApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tidys/CocosCreatorForDeskApp/issues"
+  },
+  "homepage": "https://github.com/tidys/CocosCreatorForDeskApp#readme",
+  "dependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "@types/node": "^12.6.3",
+    "chokidar": "^3.0.2",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "json-format": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "electron": "^5.0.6",
+    "eslint-plugin-vue": "^5.2.3"
+  }
+}
